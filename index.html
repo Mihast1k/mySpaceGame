@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Космическая битва</title>  
+</head >
+<body>
+
+    <div id="pauseMenu" style="display: none;">
+        <h1 class = "textGameOver";>Продолжить или выйти?</h1>
+        <div>
+            <button onclick="continueButton()"  class="buttonPauseMenu">Продолжить</button>
+        </div>
+        <div>
+            <button onclick="exitButton()" class="buttonPauseMenu">Выход</button>
+        </div>
+    </div>
+    
+    <table>
+        <tr>
+            <td class="left-side">
+                <button onclick="pauseON()" class="buttonPause">Пауза</button>
+                <h1>Опыт:</h1>
+                <h1 id="experience">0</h1>
+                <h1>Жизней:</h1>
+                <h1 id="hp">3</h1>
+            </td>
+            <td>
+                <div id="wrapper">
+                    <canvas id="game" width="1200" height="700" >
+                        Элемент не поддерживается
+                    </canvas>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <script type="text/javascript" src="game.js" ></script>
+</body>
+</html>

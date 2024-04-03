@@ -1,0 +1,167 @@
+body {
+    background: darkslateblue;
+    overflow-y: hidden;
+}
+#wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+}
+canvas{
+    cursor: none;
+}
+
+.buttonMenu {
+      -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: #ccc;
+    appearance: none;
+    border: 0;
+    border-radius: 10px;
+    background: #4676D7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 100px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 30px; 
+}
+
+.buttonGameOver{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: #ccc;
+    appearance: none;
+    border: 0;
+    border-radius: 10px;
+    background: #4676D7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 100px;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 350px; 
+}
+.textGameOver{
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+    font-size: 120px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px #957dad,
+                 1px 2px 0px #957dad,
+                 1px 3px 0px #957dad,
+                 1px 4px 0px #957dad,
+                 1px 5px 0px #957dad,
+                 1px 6px 0px #957dad,
+                 1px 10px 5px rgba(16, 16, 16, 0.5),
+                 1px 15px 10px rgba(16, 16, 16, 0.4),
+                 1px 20px 30px rgba(16, 16, 16, 0.3),
+                 1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+.imageGameOver{
+    background-image: url("resources/Frame.png");
+    background-repeat: no-repeat;
+    background-position-x: 120px;
+    background-size: 1300px, 1300px;
+}
+.textGameOversmall{
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px #957dad,
+                 1px 2px 0px #957dad,
+                 1px 3px 0px #957dad,
+                 1px 20px 30px rgba(16, 16, 16, 0.3),
+                 1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+
+button:hover {
+    background: blue;
+    outline: none;
+    box-shadow: 0 0 0 4px white;
+}
+
+.image-container {
+    background-image: url("resources/Frame.png");
+    background-repeat: no-repeat;
+    background-position-x: 580px;
+    background-position-y: 50px;
+    background-size: 1000px, 1000px;
+}
+.left-side {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    vertical-align: top;
+    padding: 32px 16px;
+    text-shadow: 1px 1px 0px #957dad,
+                 1px 2px 0px #957dad,
+                 1px 3px 0px #957dad,
+                 5px 5px 5px rgba(16, 16, 16, 0.5);
+}
+#pauseMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-41%, -50%);
+    background-color: darkslateblue;
+    padding-left: 160px;
+    padding-right: 167px;
+    padding-bottom: 120px;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.buttonPause {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: #ccc;
+  appearance: none;
+  border: 0;
+  border-radius: 10px;
+  background: #4676D7;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 70px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.buttonPauseMenu {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: #ccc;
+  appearance: none;
+  border: 0;
+  border-radius: 10px;
+  background: #4676D7;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 70px;
+  cursor: pointer;
+  margin-top: 40px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 20px;
+}
