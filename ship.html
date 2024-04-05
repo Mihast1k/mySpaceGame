@@ -3,9 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Выбор корабля</title>
 </head>
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .column {
+        flex: 1;
+        margin-right: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .column:last-child {
+        margin-right: 0;
+    }
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+         appearance: none;
+    appearance: none;
+    background: #4676D7;
+    color: #fff;
+    font-size: 30px;
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    }
+    .button:last-child {
+        margin-right: 0;
+    }
+    .image_Ship{
+
+        width: 150px;
+
+
+    }
+</style>
+</head>
 <body>
+
+    <div>
+        <div    class="container">
+            <div class="column">
+                <img class="image_Ship" src="/resources/PNG/playerShip1_blue.png">
+            </div>
+            <div class="column">
+                <img  class="image_Ship" src="/resources/PNG/playerShip1_green.png" >
+            </div>
+            <div class="column">
+                <img class="image_Ship" src="resources/PNG/playerShip1_orange.png">
+            </div>
+            <div class="column">
+                <img class="image_Ship" src="resources/PNG/playerShip1_red.png">
+            </div>
+        </div>
+    </div>
+
     
+    <div class="button-container">
+        <button class="button">Синий</button>
+        <button class="button">Зелёный</button>
+        <button class="button">Оранжевый</button>
+        <button class="button">Красный</button>
+    </div>  
+
+    <div>
+        <button class="buttonPause">Назад</button>
+    </div>
+
+    <script type="text/javascript" src="game.js" ></script>
 </body>
 </html>

@@ -9,6 +9,7 @@ var lavels = 20;
 var bullet = 20;
 var complexity = 500;
 var healthPoint = 3;
+var shipColor = ['resources/PNG/playerShip1_blue.png','resources/PNG/playerShip1_green.png','resources/PNG/playerShip1_orenge.png','resources/PNG/playerShip1_red.png'];
 var menuPause = false;
 
 window.score = 0;
@@ -28,7 +29,7 @@ var fireimg = new Image();
 fireimg.src = 'resources/PNG/Lasers/laserBlue05.png';
 
 var shipimg = new Image();
-shipimg.src = 'resources/PNG/playerShip1_blue.png';
+shipimg.src = String(shipColor[3]);
 
 
 
