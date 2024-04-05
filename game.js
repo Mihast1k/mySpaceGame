@@ -9,7 +9,7 @@ var lavels = 20;
 var bullet = 20;
 var complexity = 500;
 var healthPoint = 3;
-var shipColor = ['resources/PNG/playerShip1_blue.png','resources/PNG/playerShip1_green.png','resources/PNG/playerShip1_orenge.png','resources/PNG/playerShip1_red.png'];
+var shipColor = localStorage.getItem('colorShip');
 var menuPause = false;
 
 window.score = 0;
@@ -29,19 +29,22 @@ var fireimg = new Image();
 fireimg.src = 'resources/PNG/Lasers/laserBlue05.png';
 
 var shipimg = new Image();
-shipimg.src = String(shipColor[3]);
-
-
+shipimg.src = String(shipColor);
 
 
 canvas.addEventListener("mousemove", function(event){
+    if (menuPause)
+        return;
     ship.x = event.offsetX-48;
     ship.y = event.offsetY-40;
+
 })
+
 
 fon.onload = function(){
     game(); 
 }
+
 
 document.addEventListener('keydown', function (e) {
     if(e.keyCode === 27) {
@@ -66,7 +69,7 @@ function update(){
         timer++;
 
         if(timer % complexity == 0){
-            lavels-= 3;
+            lavels-= 2;
         }
         
     
@@ -174,6 +177,10 @@ var requestAnimationFrame = (function(){
 
 })();
 
+function exitMenu(){
+    window.location.href = 'menu.html';
+}
+
 function pauseON(){
     menuPause = true;
     document.getElementById('pauseMenu').style.display = 'block';
@@ -186,7 +193,6 @@ function exitButton(){
     
 function continueButton(){
     menuPause = false;
-    // Здесь вы можете добавить код для продолжения игры
     document.getElementById('pauseMenu').style.display = 'none';
 }
    
@@ -198,5 +204,18 @@ function lavel2(){
 }
 function lavel3(){
     window.location.href = 'index.html';
+}
+
+function blueShip(){
+    window.localStorage.setItem('colorShip', 'resources/PNG/playerShip1_blue.png');
+}
+function greenShip(){
+    window.localStorage.setItem('colorShip', 'resources/PNG/playerShip1_green.png');
+}
+function orangeShip(){
+    window.localStorage.setItem('colorShip', 'resources/PNG/playerShip1_orange.png');
+}
+function redShip(){
+    window.localStorage.setItem('colorShip', 'resources/PNG/playerShip1_red.png');
 }
 

@@ -11,6 +11,7 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
+        margin-top: 100px;
     }
     .column {
         flex: 1;
@@ -18,6 +19,7 @@
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
+        margin-bottom: 20px;
     }
     .column:last-child {
         margin-right: 0;
@@ -31,16 +33,16 @@
         -webkit-appearance: none;
         -moz-appearance: none;
          appearance: none;
-    appearance: none;
-    background: #4676D7;
-    color: #fff;
-    font-size: 30px;
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
+        appearance: none;
+        background: #4676D7;
+        color: #fff;
+        font-size: 30px;
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
     }
     .button:last-child {
         margin-right: 0;
@@ -48,15 +50,22 @@
     .image_Ship{
 
         width: 150px;
-
-
+        height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto; 
+            margin-right: auto;
+    }
+    .buttonDawn{
+        margin-bottom: 200px;
     }
 </style>
 </head>
 <body>
 
-    <div>
-        <div    class="container">
+    <div >
+        <div class="container">
             <div class="column">
                 <img class="image_Ship" src="/resources/PNG/playerShip1_blue.png">
             </div>
@@ -74,16 +83,16 @@
 
     
     <div class="button-container">
-        <button class="button">Синий</button>
-        <button class="button">Зелёный</button>
-        <button class="button">Оранжевый</button>
-        <button class="button">Красный</button>
+        <button class="button" onclick="blueShip()">Синий</button>
+        <button class="button" onclick="greenShip()">Зелёный</button>
+        <button class="button" onclick="orangeShip()">Оранжевый</button>
+        <button class="button" onclick="redShip()">Красный</button>
     </div>  
 
     <div>
-        <button class="buttonPause">Назад</button>
+        <button onclick = "exitMenu()" class="buttonPause">Назад</button>
     </div>
 
-    <script type="text/javascript" src="game.js" ></script>
+    <script  type="text/javascript" src="game.js" ></script>
 </body>
 </html>

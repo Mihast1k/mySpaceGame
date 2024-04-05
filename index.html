@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Космическая битва</title>  
 </head >
+<style>
+
+</style>
 <body>
 
     <div id="pauseMenu" style="display: none;">
@@ -18,24 +21,27 @@
         </div>
     </div>
     
-    <table>
-        <tr>
-            <td class="left-side">
-                <button onclick="pauseON()" class="buttonPause">Пауза</button>
-                <h1>Опыт:</h1>
-                <h1 id="experience">0</h1>
-                <h1>Жизней:</h1>
-                <h1 id="hp">3</h1>
-            </td>
-            <td>
-                <div id="wrapper">
-                    <canvas id="game" width="1200" height="700" >
-                        Элемент не поддерживается
-                    </canvas>
-                </div>
-            </td>
-        </tr>
-    </table>
+    <div class="windoy">
+        <table>
+            <tr>
+                <td class="left-side">
+                    <button onclick="pauseON()" class="buttonPause">Пауза</button>
+                    <h1>Опыт:</h1>
+                    <h1 id="experience">0</h1>
+                    <h1>Жизней:</h1>
+                    <h1 id="hp">3</h1>
+                </td>
+                <td>
+                    <div id="wrapper">
+                        <canvas id="game" width="1200" height="700" >
+                            Элемент не поддерживается
+                        </canvas>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
 
     <script type="text/javascript" src="game.js" ></script>
 </body>
